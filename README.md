@@ -5,6 +5,8 @@ Leverages [Bandwidth's API](http://ap.bandwidth.com/?utm_medium=social&utm_sourc
 
 Chipotle ran a promotion to text `888222` with text `RAINCHECK` to receive a voucher to get a free burrito.
 
+![Burrito Promo](/readme_images/burrito.png?raw=true)
+
 ## To Run
 Fill in the top variables:
 
