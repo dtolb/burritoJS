@@ -1,0 +1,17 @@
+//thanks to github.com/vvuksan for casper script
+var links = [];
+var casper = require('casper').create();
+casper.start();
+casper.userAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5
+376e Safari/8536.25');
+casper.thenOpen('<URL>', function() {
+    this.fill('form[class="edit_entry"]', { 
+        "entry[first_name]": '<FIRSTNAME>',
+        "entry[last_name]": '<LASTNAME>',
+        "entry[zip_code]": '<ZIPCODE>'        
+    }, true);
+});
+casper.then(function() {
+    this.echo(this.getTitle());
+});
+casper.run();
